@@ -88,7 +88,7 @@ public protocol MBUploadFormable: MBFormable {
 /// Form protocol. Object conforms to this protocol can be used by the `request`, `download`, `upload` method in `MBRequestable` protocol
 public protocol MBFormable {
     /// Request url
-    var url: String { get }
+    func url() -> String
 
     /// Request method
     var method: Alamofire.HTTPMethod { get }
